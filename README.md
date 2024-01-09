@@ -27,7 +27,7 @@
 
 
 
-The aim of this project is to architect and implement a cloud-based database system on Azure via hands-on expertise in cloud engineering. A production environment was set-up for the AdventureWorks database using the Microsoft SQL Server Management Studio (SSMS) and was subsequently migrated to Azure SQL database thruogh the Azure Data Studio.
+The aim of this project is to architect and implement a cloud-based database system on Azure via hands-on expertise in cloud engineering. A production environment was set-up for the AdventureWorks database using the Microsoft SQL Server Management Studio (SSMS) and was subsequently migrated to Azure SQL database using Azure Data Studio. The hands-on experience offered me the opportunity to confidently apply a number of Azure cloud services to the AdventureWorks database from the SQL Server Management Studio to ensure a seamless database migration.
 
 
 
@@ -36,7 +36,7 @@ The aim of this project is to architect and implement a cloud-based database sys
 
 
 
-This project required the use of two virtual machines on the Azure portal. One for the development environment and the other for the production environment. adventure-vm was for production environment while Dragon-vm was for the development environment. The operating systems for both virtual machines was Windows 10Pro. However, it must be noted that CPU capacity and Memory are crucial for ease of access to the remote desktop environment facilitated by the RDP file created. For both virtual machines, the size for each CPU and Memory was Standard D2s v3 (2 vcpus, 8 GiB memory). A lesser capacity would be inadequate in that it would result in difficulties accessing the remote desktop virtual environments and vice versa.
+This project required the use of two virtual machines(vms) on the Azure portal. One for the development environment and the other for the production environment. adventure-vm was used for the production environment while Dragon-vm was use for the development environment. The operating systems for both virtual machines were Windows 10Pro. However, it must be noted that CPU capacity and Memory were crucial for ease of access to the remote desktop environment facilitated by the RDP file created. For both virtual machines, the size for each CPU and Memory used was Standard D2s v3 (2 vcpus, 8 GiB memory). A lesser size capacity would have been inadequate in that it would result in difficulties accessing the remote desktop virtual environments and vice versa.
 
 This project was primarily used for demonstrating hands-on experience in Azure Database Migration.
 
@@ -152,7 +152,7 @@ Please see images of adventure1storage and adventure1container below respectivel
 
 
 
-Appropriate firewall configuration done was done through VSCode to enable adventure-skylight server and adventure-database connection on VSCode, microsoft remote desktop installed and RDP protocol deployed to facilitate connection with the VM.
+Appropriate firewall configuration done was done through VSCode to enable adventure-skylight server and adventure-database connection on VSCode, Microsoft remote desktop was installed and RDP protocol deployed to facilitate connection with the VMs.
 
 
 
@@ -279,7 +279,7 @@ https://aicore-portal-public-prod-307050600709.s3.eu-west-1.amazonaws.com/projec
 The backup file corresponds to the Microsoft Sql server database known as Adventureworks2022.
 
 
-Restoring the AdventureWorks2022 database from the backup file replicates an authentic production database environment. 
+Restoring the AdventureWorks2022 database from the backup file replicated an authentic production database environment. 
 
 
 
@@ -295,7 +295,7 @@ Restoring the AdventureWorks2022 database from the backup file replicates an aut
 
 
 
-- Click on the backup file link provided to download it on the remote desk
+- Click on the backup file link provided to download it on the remote desktop
 
 
 
@@ -340,7 +340,7 @@ See images of database and tables below
 
 
 
-Azure SQL database created earlier is called the adventure-database and serves as the target for migrating the on-premises database (AdventureWorks2022). All appropriate firewall rules, authentication and IP address were previously configured to facilitate ease of connection.
+Azure SQL database created earlier is called the adventure-database and serves as the target for migrating the on-premise database (AdventureWorks2022). All appropriate firewall rules, authentication and IP address were previously configured to facilitate ease of connection.
 
 
 
@@ -349,7 +349,7 @@ Azure SQL database created earlier is called the adventure-database and serves a
 
 
 
-Azure Data Studio was installed on my local computer using the link below 
+Azure Data Studio was installed on the adventure-vm using the link below 
 
 https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fgo.microsoft.com%2Ffwlink%2F%3Flinkid%3D2242848
 
@@ -379,7 +379,7 @@ See image below:
 
 
 
-Connection to the Azure cloud server was achieved using the required login credentials for adventure-skylight and adventure-database selected as detabase. While connection to the on-premise server (adventure-vm) was achieved using windows authentication and AdventureWorks2022 as selected database.  
+Connection to the Azure cloud server was achieved using the required login credentials for adventure-skylight and adventure-database was selected as detabase. While connection to the on-premise server (adventure-vm) was achieved using windows authentication and AdventureWorks2022 selected as database.  
 
 
 
@@ -388,11 +388,11 @@ Connection to the Azure cloud server was achieved using the required login crede
 
 
 
-Following the connection of the on-premises database and Azure SQL database, to achieve schema migration, SQL Server Schema Compare was installed on Azure Data Studio via the extension option. After installation of the SQL Server Schema Compare, the local database (AdventureWorks2022) was right-clicked to select the schema compare option. 
+Following the connection of the on-premise database and Azure SQL database, to achieve schema migration, SQL Server Schema Compare was installed on Azure Data Studio via the extension option. After installation of the SQL Server Schema Compare, the local database (AdventureWorks2022) was right-clicked to select the schema compare option. 
 
 
 
-As seen in the image below after selecting the schema compare option, the source and target databases were appropriately confirmed. in this case, the source database was AdventureWorks2022 and applicable applicable server while the target database was adventure-database and its applicable server. Click the ok button to continue.
+As seen in the image below after selecting the schema compare option, the source and target databases were appropriately confirmed. in this case, the source database was AdventureWorks2022 and applicable the server while the target database was adventure-database and its applicable server. Click the ok button to continue.
 
 
 
@@ -435,11 +435,11 @@ Selected schema on the AdventureWorks database above was applied to the target d
 
 
 
-Azure SQL Migration tool was installed via Extension option by searching for Azure SQL Migration through Extension view on Azure Data Studio.
+Azure SQL Migration tool was installed via Extension option by searching for Azure SQL Migration through Extension view option on Azure Data Studio.
 
 
 
-On the Azure Data Studio, the on-premises server (adventure-vm) right-clicked and manage option selected to access the Azure SQL Migration. See image below.
+On the Azure Data Studio, the on-premise server (adventure-vm) was right-clicked and the Manage option was selected to access the Azure SQL Migration. See image below.
 
 
 
@@ -459,7 +459,7 @@ Azure SQL was accessed by clicking on Azure SQL Migration under General and Adve
 
 
 
-Follow subsequent instructions, select target platform (Azure SQL Database) and tick AdventureWorks database as per image below.
+Follow subsequent instructions, select target platform (Azure SQL Database) and tick AdventureWorks2022 database as per image below.
 
 
 
@@ -469,11 +469,11 @@ Follow subsequent instructions, select target platform (Azure SQL Database) and 
 
 
 
-Details of Azure SQL target were filled before connection was done. 
+Details of Azure SQL target were filled before connection was made. 
 
 
 
-Source database - AdventureWorks
+Source database - AdventureWorks2022
 
 
 Target database - adventure-database
@@ -481,7 +481,7 @@ Target database - adventure-database
 
 
 
-Also, an Azure Database Migration Service was created on Azure account and was configured for migration on Azure Data Studio  - see images below.
+Also, an Azure Database Migration Service was created on Azure account and configured for migration on Azure Data Studio  - see images below.
 
 
 
@@ -521,7 +521,7 @@ An integration runtime was setup as per instructions and one of the authenticati
 
 
 
- The next instructions was to input the on-premises server password, select edit tables and tick Table name. Schema was found on target and validation was done.
+ The next instructions was to input the on-premise server password, select edit tables and tick Table name. Schema was found on target and validation was done.
 
 
 
@@ -542,7 +542,7 @@ An integration runtime was setup as per instructions and one of the authenticati
 
 
 
-Migration was done by clicking next after validation had been done. See below.
+Migration was done by clicking Next button in the image above after validation had been done. See below.
 
 
 
@@ -572,7 +572,7 @@ Migration was successful! As per image above.
 
 
 
-Regular and consistence backup of the Azure SQL Database is critical for data protection. Whereas, irregular backups could result in reputational damage, incresed downtime, inadequate disaster recovery, and the risk of high data loss.
+Regular and consistence backup of the Azure SQL Database is critical for data protection. Whereas, irregular backups could result in reputational damage, increased downtime, inadequate disaster recovery, and the risk of high data loss.
 
 
 
@@ -642,7 +642,7 @@ Backup file storage location - see image below
 
 
 
-Storage account and container initially created on Azure were adventure1storage and adventure1container - see image below.
+The storage account and container initially created on Azure were adventure1storage and adventure1container - see image below.
 
 
 
@@ -846,7 +846,7 @@ Process
 
 
 
-- Enable the SQL Server Agent through the SQL sever Configuration Manager from the Start Menu search option, click on SQL services and right-click on SQL Server Agent to click start. See image of SQL Server Agent below after enablement.
+- Enable the SQL Server Agent through the SQL server Configuration Manager from the Start Menu search option, click on SQL services and right-click on SQL Server Agent to click start. See image of SQL Server Agent below after enablement.
 
 
 
@@ -856,7 +856,7 @@ Process
 
 
 
-- Right-click on MaintenancePlans and select Maintenance Plan Wizard and click next as per image below.
+- Right-click on MaintenancePlans and select Maintenance Plan Wizard and click Next as per image below.
 
 
 
@@ -866,7 +866,7 @@ Process
 
 
 
-- Give the Plan a name. I gave the Plan the name MaintenancePlanFullBackup. Proceed to schedule backup by clicking change option. See images below.
+- Give the Plan a name. I gave the Plan the name MaintenancePlanFullBackup. Proceeded to schedule backup by clicking change option. See images below.
 
 
 
@@ -933,7 +933,9 @@ As per the above image, the maintenance plan was scheduled weekly on Sundays at 
 
 
 
+
 MaintenancePlanFullBackup now in place as per image below in the Object Explorer above.
+
 
 
 
@@ -1114,7 +1116,7 @@ New database (adventure-database_2024-01-07T09-08Z) created after deployment. Se
 
 
 
-To verify adventure-database has been restored to a correct point in time before data loss or compromise, run a new query in Azure Data Studio for Select entries in the PersonCreditCard table and execute it.
+To verify adventure-database had been restored to a correct point in time before data loss or compromise, run a new query in Azure Data Studio for Selected entries in the PersonCreditCard table and was executed.
 
 
 
@@ -1169,7 +1171,7 @@ Following restoration in the Azure portal, the new production environment databa
 
 
 
-Geo-Replication is a disater recovery feature in Azure SQL Database known to provide data redundancy and high availability by asynchronously replicating a primary database to a secondary region.The geographical sepration also helps to provide high resilience, thereby minimising shared risks.
+Geo-Replication is a disater recovery feature in Azure SQL Database known to provide data redundancy and high availability by asynchronously replicating a primary database to a secondary region.The geographical separation also helps to provide high resilience, thereby minimising shared risks.
 
 
 
@@ -1303,7 +1305,7 @@ Process
 
 
 
-- Name of failover group created was skylight-failover-group and the server selected was adventure-skylight-replica-server which was the server associated with the replication server created earlier. click create. See images below.
+- Name of failover group created was skylight-failover-group and the server selected was adventure-skylight-replica-server which was the server associated with the replication server created earlier. click Create. See images below.
 
 
 
@@ -1332,7 +1334,7 @@ Process
 
 
 
-- Failover initiated by selecting by selecting Failover option from the task pane and click yes. See images below.
+- Failover initiated by selecting Failover option from the task pane and click yes. See images below.
 
 
 
@@ -1404,7 +1406,7 @@ Failover was reversed successfully(Tailback). Demonstrating the cyclical nature 
 ## Milestone 7 - Microsoft Entra Directory Integration 
 
 
-Giving the advancements in today's cloud-computing space, the need for secure and seemless access management has become a high priority. Microsoft Entra ID is a Microsoft's cloud-based identity and access management service that helps organizations to manage and secure their users, applications and data. However, when it comes to Azure resources such as Azure SQL Database and others, traditional username/password login-based authentication may not meet the required level of security and convenience necessary for today's cloud-based applications. Hence, the need for Microsoft Entra ID integration.
+Given recent advancements in today's cloud-computing space, the need for secure and seemless access management has become a high priority. Microsoft Entra ID is a Microsoft's cloud-based identity and access management service that helps organizations to manage and secure their users, applications and data. However, when it comes to Azure resources such as Azure SQL Database and others, traditional username/password login-based authentication may not meet the required level of security and convenience necessary for today's cloud-based applications. Hence, the need for Microsoft Entra ID integration.
 
 
 
@@ -1673,7 +1675,7 @@ Therefore, user DB_Read1 does not have permission to add, remove or update data.
 
 
 
-In conclusion, this project demonstrated a hands-on experience in Azure database migration and the application of Microsoft cloud.
+In conclusion, this project demonstrated a hands-on experience in database migration from an on-premise environment to a cloud-based environment using Azure SQL Migration on Azure Data Studio. It also evidenced the application of Azure cloud services in ensuring data protection, database integrity and security due to the robust architecture of Azure.
 
 
 
