@@ -1673,7 +1673,7 @@ Therefore, user DB_Read1 does not have permission to add, remove or update data.
 
 
 
-In conclusion, this project demonstrated a hands-on experience in Azure data migration and the application of Microsoft cloud.
+In conclusion, this project demonstrated a hands-on experience in Azure database migration and the application of Microsoft cloud.
 
 
 
