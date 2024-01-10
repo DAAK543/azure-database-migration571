@@ -67,9 +67,9 @@ The name of the applicable github repo is https://github.com/DAAK543/azure-datab
 
 
 
-Azure account credentials from AiCore support.
+Azure account credentials created from AiCore support to enable access to my Azure portal.
 
-A free account subscription was created by clicking the appropriate link on the site.
+
 
 The following Azure services were created as per image below
 
